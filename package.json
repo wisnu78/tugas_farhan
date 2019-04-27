@@ -1,14 +1,21 @@
 {
+  "build": {
+    "nwVersion": "0.14.7"
+  },
+  "main": "http://localhost:8080",
   "name": "inventory_1",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "nw-serve": "nw ."
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "core-js": "^2.6.5",
+    "element-ui": "^2.8.2",
     "register-service-worker": "^1.6.2",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
@@ -22,6 +29,8 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "nw": "^0.38.0-sdk",
+    "nwjs-builder-phoenix": "^1.15.0",
     "vue-template-compiler": "^2.5.21"
   },
   "eslintConfig": {
